@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		988E57121FD196160028C951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E57111FD196160028C951 /* AppDelegate.swift */; };
 		988E57141FD196160028C951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E57131FD196160028C951 /* ViewController.swift */; };
-		988E57171FD196160028C951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E57151FD196160028C951 /* Main.storyboard */; };
 		988E57191FD196160028C951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988E57181FD196160028C951 /* Assets.xcassets */; };
 		988E571C1FD196160028C951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E571A1FD196160028C951 /* LaunchScreen.storyboard */; };
+		988E57241FD196540028C951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E57231FD196540028C951 /* Main.storyboard */; };
+		988E57271FD196680028C951 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E57251FD196680028C951 /* ArcView.swift */; };
+		988E57281FD196680028C951 /* PlusMinusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E57261FD196680028C951 /* PlusMinusView.swift */; };
+		988E572A1FD196880028C951 /* ArcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E57291FD196880028C951 /* ArcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		988E570E1FD196160028C951 /* CustomArc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomArc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988E57111FD196160028C951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		988E57131FD196160028C951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		988E57161FD196160028C951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		988E57181FD196160028C951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		988E571B1FD196160028C951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		988E571D1FD196160028C951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988E57231FD196540028C951 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		988E57251FD196680028C951 /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		988E57261FD196680028C951 /* PlusMinusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusMinusView.swift; sourceTree = "<group>"; };
+		988E57291FD196880028C951 /* ArcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		988E57101FD196160028C951 /* CustomArc */ = {
 			isa = PBXGroup;
 			children = (
+				988E57291FD196880028C951 /* ArcViewController.swift */,
+				988E57251FD196680028C951 /* ArcView.swift */,
+				988E57261FD196680028C951 /* PlusMinusView.swift */,
+				988E57231FD196540028C951 /* Main.storyboard */,
 				988E57111FD196160028C951 /* AppDelegate.swift */,
 				988E57131FD196160028C951 /* ViewController.swift */,
-				988E57151FD196160028C951 /* Main.storyboard */,
 				988E57181FD196160028C951 /* Assets.xcassets */,
 				988E571A1FD196160028C951 /* LaunchScreen.storyboard */,
 				988E571D1FD196160028C951 /* Info.plist */,
@@ -123,9 +132,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988E57241FD196540028C951 /* Main.storyboard in Resources */,
 				988E571C1FD196160028C951 /* LaunchScreen.storyboard in Resources */,
 				988E57191FD196160028C951 /* Assets.xcassets in Resources */,
-				988E57171FD196160028C951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988E57271FD196680028C951 /* ArcView.swift in Sources */,
+				988E57281FD196680028C951 /* PlusMinusView.swift in Sources */,
 				988E57141FD196160028C951 /* ViewController.swift in Sources */,
+				988E572A1FD196880028C951 /* ArcViewController.swift in Sources */,
 				988E57121FD196160028C951 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +156,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		988E57151FD196160028C951 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				988E57161FD196160028C951 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		988E571A1FD196160028C951 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
